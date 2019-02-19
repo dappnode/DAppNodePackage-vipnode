@@ -1,0 +1,25 @@
+version: "3.4"
+services:
+  dappnodepackage-vipnode.public.dappnode.eth:
+    container_name: DAppNodePackage-vipnode.public.dappnode.eth
+    image: >-
+      dappnodepackage-vipnode.public.dappnode.eth:0.0.1
+    restart: always
+    volumes:
+      - /var/lib/docker/volumes/dncore_ethchaindnpdappnodeeth_data/_data/network/key:/app/nodekey:ro
+    networks:
+      network:
+        ipv4_address: 172.33.1.23
+    dns: 172.33.1.2
+    environment:
+      PAYOUT_ADDRESS: 0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+networks:
+  network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.33.0.0/16

@@ -1,0 +1,5 @@
+version: '3.4'
+services:
+    dappnodepackage-vipnode.public.dappnode.eth:
+        image: 'dappnodepackage-vipnode.public.dappnode.eth:0.0.1'
+        build: ./build
