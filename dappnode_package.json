@@ -1,16 +1,19 @@
 {
-  "name": "dappnodepackage-vipnode.public.dappnode.eth",
+  "name": "vipnode.public.dappnode.eth",
   "version": "0.0.1",
   "description": "Economic incentive for running Ethereum full nodes. The goal is to allow the Ethereum network to remain decentralized by creating a financial marketplace for more people to run full nodes and serve native light clients.",
-  "avatar": "",
+  "avatar": "/ipfs/QmX5Z728oAbkQ1dyzL4VzU23z3JCSxArwZoftxVCaGw7CK",
   "type": "service",
   "image": {
-    "path": "",
-    "hash": "",
-    "size": "",
+    "path": "vipnode.public.dappnode.eth_0.0.1.tar.xz",
+    "hash": "/ipfs/Qmek5QTshbER8pwGux8F4irQAzQKATnUECbbftSujyirXY",
+    "size": 7543331,
     "restart": "always",
+    "environment": [
+      "PAYOUT_ADDRESS="
+    ],
     "volumes": [
-      "/var/lib/docker/volumes/dncore_ethchaindnpdappnodeeth_data/_data/network/key:/app/nodekey:ro"
+      "/var/lib/docker/volumes/dncore_ethchaindnpdappnodeeth_data/_data/:/app/.ethchain:ro"
     ]
   },
   "author": "dappnode",
