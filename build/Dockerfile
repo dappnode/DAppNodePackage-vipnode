@@ -12,6 +12,7 @@ RUN GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o vipnode
 
 ### Final stage
 FROM alpine
+RUN apk update && apk --no-cache add ca-certificates
 WORKDIR /app
 COPY --from=build-env /go/vipnode/vipnode /app/
-ENTRYPOINT ./vipnode host --rpc=http://my.ethchain.dnp.dappnode.eth:8545 -vv --payout=PAYOUT_ADDRESS --nodekey=/app/nodekey
+ENTRYPOINT ./vipnode host --rpc=http://my.ethchain.dnp.dappnode.eth:8545 -vv --payout=${PAYOUT_ADDRESS} --nodekey=/app/.ethchain/network/key
