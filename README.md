@@ -5,14 +5,12 @@
 [![Vipnode github](https://img.shields.io/badge/Vipnode-Github-blue.svg)](https://github.com/vipnode/vipnode)
 [![Vipnode web](https://img.shields.io/badge/Vipnode-website-753a88.svg)](https://https://vipnode.org)
 
-# How to install and use it
+# Installing and setting up Vipnode
 
-* Go to [DAppNodePackage-vipnode](http://my.admin.dnp.dappnode.eth/#/installer/vipnode.dnp.dappnode.eth)
-* Before pressing the install button, click on `Show advanced settings`
-* Set the address where you want to receive payments on the `PAYOUT_ADDRESS` value
+* Go to [DAppNodePackage-vipnode](http://my.admin.dnp.dappnode.eth/#/installer/vipnode.dnp.dappnode.eth) or go directly to your installer tab and find the Vipnode package. 
+* Before pressing the install button, click on `Show advanced settings` and set the address where you want to receive payments on the `PAYOUT_ADDRESS` value (you can change it at any time after the install too).
 * Click `Install`
-* Wait until it is installed
-* Go to [http://my.admin.dnp.dappnode.eth/#/packages/vipnode.dnp.dappnode.eth](http://my.admin.dnp.dappnode.eth/#/packages/vipnode.dnp.dappnode.eth) to see the logs
+* When the installation is complete, go to [http://my.admin.dnp.dappnode.eth/#/packages/vipnode.dnp.dappnode.eth](http://my.admin.dnp.dappnode.eth/#/packages/vipnode.dnp.dappnode.eth) to see the logs
 * You should see your enode `[host] 2019/04/09 08:45:33 Connected to local node: enode://974f7b125a2a3756ddb917f9ae...` on the pool status website [Status](https://vipnode.org/status)
 
 ## About Vipnode
