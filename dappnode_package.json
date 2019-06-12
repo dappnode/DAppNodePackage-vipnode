@@ -6,8 +6,8 @@
   "type": "service",
   "image": {
     "path": "vipnode.dnp.dappnode.eth_0.0.1.tar.xz",
-    "hash": "/ipfs/QmfGTuPBxs641TBxf1tGkv6B5MxXDdMQan67iwpVykFAHe",
-    "size": 7844641,
+    "hash": "/ipfs/QmWiUNvXNyiwSgzDMDkoPhaK69PTBSxD7BHYJjhFzzJMcP",
+    "size": 7851981,
     "restart": "always",
     "environment": [
       "PAYOUT_ADDRESS="
