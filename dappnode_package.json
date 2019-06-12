@@ -6,15 +6,11 @@
   "type": "service",
   "image": {
     "path": "vipnode.dnp.dappnode.eth_0.0.1.tar.xz",
-    "hash": "/ipfs/QmWiUNvXNyiwSgzDMDkoPhaK69PTBSxD7BHYJjhFzzJMcP",
+    "hash": "/ipfs/QmWU7ogv7kuxT2He875esSP8c5LW1gFrZXu4n5vq7ZHWRJ",
     "size": 7851981,
     "restart": "always",
-    "environment": [
-      "PAYOUT_ADDRESS="
-    ],
-    "external_vol": [
-      "dncore_ethchaindnpdappnodeeth_data:/app/.ethchain:ro"
-    ]
+    "environment": ["PAYOUT_ADDRESS="],
+    "external_vol": ["dncore_ethchaindnpdappnodeeth_data:/app/.ethchain:ro"]
   },
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
   "license": "GPL-3.0",
