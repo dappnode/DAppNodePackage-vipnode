@@ -1,6 +1,6 @@
 ### Build stage
 FROM golang:alpine3.9 AS build-env
-ENV VERSION v2.0.1
+ENV VERSION v2.2.1
 # Install build deps
 RUN apk update && apk --no-cache add git gcc build-base
 # Get the source code
