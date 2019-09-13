@@ -37,11 +37,11 @@ jobs:
       services:
         - docker
       script:
-        - npm install -g @dappnode/dappnodesdk
+        - npm install -g 'github:dappnode/dappnodesdk#refactor'
         - docker-compose build
         - "TYPE=${TRAVIS_TAG##*/}"
         - "[ ! '$TYPE' = 'release' ] || TYPE='patch'"
-        - dappnodesdk publish ${TYPE} -p infura
+        - dappnodesdk publish ${TYPE} -p infura --ipfs_provider http://ipfs.dappnode.io:5001 --eth_provider infura
       node_js:
         - "10.15.3"
       before_deploy:
