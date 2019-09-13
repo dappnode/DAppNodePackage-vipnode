@@ -16,4 +16,4 @@ FROM alpine:3.9
 RUN apk update && apk --no-cache add ca-certificates
 WORKDIR /app
 COPY --from=build-env /go/vipnode/vipnode /usr/bin/
-ENTRYPOINT vipnode host --rpc=http://my.ethchain.dnp.dappnode.eth:8545 -vv --payout=${PAYOUT_ADDRESS} --nodekey=/app/.ethchain/network/key
+ENTRYPOINT vipnode agent --rpc=http://my.ethchain.dnp.dappnode.eth:8545 -vv --payout=${PAYOUT_ADDRESS} --nodekey=/app/.ethchain/network/key
