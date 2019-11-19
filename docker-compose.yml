@@ -1,5 +1,5 @@
 version: '3.4'
 services:
   vipnode.dnp.dappnode.eth:
-    image: 'vipnode.dnp.dappnode.eth:0.1.0'
+    image: 'vipnode.dnp.dappnode.eth:0.2.0'
     build: ./build
