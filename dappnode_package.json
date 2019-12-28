@@ -1,27 +1,12 @@
 {
   "name": "vipnode.dnp.dappnode.eth",
-  "version": "0.1.0",
-  "upstreamVersion": "2.2.1",
+  "version": "0.1.1",
+  "upstreamVersion": "2.3.3",
   "shortDescription": "Economic incentive for running Ethereum full nodes",
   "description": "[Vipnode](https://vipnode.org)'s goal is to allow the Ethereum network to remain decentralized by creating a financial marketplace for more people to run full nodes and serve native light clients. Check this [medium article](https://medium.com/vipnode/an-economic-incentive-for-running-ethereum-full-nodes-ecc0c9ebe22) to understand the motivation behind this project and this [2.0 release article](https://medium.com/vipnode/vipnode-2-0-released-9af1d65b4552) for a tutorial on how to use Vipnode.",
-  "avatar": "/ipfs/QmSVNvnnq1Wg5aXT7fxWHQbLbR1aqccGUJsCWjNVT7qtFL",
   "type": "service",
-  "image": {
-    "path": "",
-    "hash": "",
-    "size": "",
-    "restart": "always",
-    "environment": [
-      "PAYOUT_ADDRESS="
-    ],
-    "external_vol": [
-      "dncore_ethchaindnpdappnodeeth_identity:/app/identity:ro"
-    ]
-  },
   "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
-  "categories": [
-    "Economic incentive"
-  ],
+  "categories": ["Economic incentive"],
   "links": {
     "homepage": "https://github.com/dappnode/DAppNodePackage-vipnode"
   },

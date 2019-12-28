@@ -1,5 +1,12 @@
 version: '3.4'
 services:
   vipnode.dnp.dappnode.eth:
-    image: 'vipnode.dnp.dappnode.eth:0.1.0'
+    image: 'vipnode.dnp.dappnode.eth:0.1.1'
     build: ./build
+    environment:
+      - PAYOUT_ADDRESS=
+    volumes:
+      - 'dncore_ethchaindnpdappnodeeth_identity:/app/identity:ro'
+volumes:
+  dncore_ethchaindnpdappnodeeth_identity:
+    external: true
