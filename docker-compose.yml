@@ -7,6 +7,9 @@ services:
       - PAYOUT_ADDRESS=
     volumes:
       - 'dncore_ethchaindnpdappnodeeth_identity:/app/identity:ro'
+      - 'dncore_ethchaindnpdappnodeeth_ipc:/app/ipc'
 volumes:
   dncore_ethchaindnpdappnodeeth_identity:
+    external: true
+  dncore_ethchaindnpdappnodeeth_ipc:
     external: true
