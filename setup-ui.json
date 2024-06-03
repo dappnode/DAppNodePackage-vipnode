@@ -1,0 +1,8 @@
+{
+  "ui:order": ["payoutAddress"],
+  "payoutAddress": {
+    "errorMessages": {
+      "pattern": "Must be a valid address (0x1fD16A...)"
+    }
+  }
+}

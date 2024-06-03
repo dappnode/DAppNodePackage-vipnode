@@ -1,0 +1,6 @@
+{
+  "payoutAddress": {
+    "type": "environment",
+    "name": "PAYOUT_ADDRESS"
+  }
+}

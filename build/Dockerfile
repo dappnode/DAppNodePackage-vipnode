@@ -1,8 +1,8 @@
 ### Build stage
 FROM golang:alpine3.9 AS build-env
-ENV VERSION v2.2.1
+ENV VERSION v2.3.3
 # Install build deps
-RUN apk update && apk --no-cache add git gcc build-base
+RUN apk update && apk --no-cache add git gcc build-base linux-headers
 # Get the source code
 RUN git clone -b ${VERSION} https://github.com/vipnode/vipnode.git
 

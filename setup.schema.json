@@ -1,0 +1,15 @@
+{
+  "description": "Welcome to DAppNode's Vipnode configuration!",
+  "type": "object",
+  "properties": {
+    "payoutAddress": {
+      "type": "string",
+      "title": "Payout Address",
+      "description": "Public address for the payment rewards of your node.",
+      "pattern": "^0x[a-fA-F0-9]{40}$",
+      "customErrors": {
+        "pattern": "Must be a valid address (0x1fD16A...)"
+      }
+    }
+  }
+}
