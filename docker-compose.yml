@@ -2,4 +2,7 @@ version: '3.4'
 services:
   vipnode.dnp.dappnode.eth:
     image: 'vipnode.dnp.dappnode.eth:0.1.0'
-    build: ./build
+    build:
+      context: ./build
+      args:
+        UPSTREAM_VERSION: v2.2.1
